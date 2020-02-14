@@ -5,7 +5,7 @@ import Head from "next/head";
 
 const Base = ({ children, meta }) => {
 
-    const title = `${meta.title ? `${meta.title} |` : null } List App`;
+    const title = `${meta.title ? `${meta.title} |` : null }`;
 
     return <React.Fragment>
         <Head>
