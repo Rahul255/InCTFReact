@@ -2,9 +2,8 @@ import React from 'react';
 import '../../styles/style.sass';
 import '../../styles/bootstrap.sass';
 import Head from "next/head";
-import TopBar from "./TopBar";
 
-const Base = ({ children, meta, hideTopbar }) => {
+const Base = ({ children, meta }) => {
 
     const title = `${meta.title ? `${meta.title} |` : null } List App`;
 
@@ -15,7 +14,6 @@ const Base = ({ children, meta, hideTopbar }) => {
             <meta name="twitter:title" content={title} />
             <meta name="og:title" property="og:title" content={title} />
         </Head>
-        { !hideTopbar ? <TopBar/> : null}
         {children}
     </React.Fragment>;
 
